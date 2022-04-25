@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input data type</title>
+</head>
+<body>
+    <label>enter an input</label>
+    <input type="text" id="num"> <br>
+    <button onclick="fun()">Submit</button><br>
+    <p id="op"></p>
+    <script>
+        function fun(){
+        const nu= document.getElementById("num").value    //if you dont put .value the else part will be 
+        //printed always . the .value will get the content of the input tag
+        n=parseInt(nu)
+        let d=''
+        if(n>0){
+            d="positive"
+        }
+        else{
+            d="negative"
+        }
+        document.getElementById("op").innerHTML=("this is a "+d+" number")
+        }
+    </script>
+</body>
+</html>
